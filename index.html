@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Diamantes - Mobile Legends</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Venta de Diamantes - Mobile Legends</h1>
+        <form id="order-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="player-id">ID de Jugador:</label>
+                <input type="text" id="player-id" name="player-id" required>
+            </div>
+            <div class="form-group">
+                <label for="server-id">Servidor:</label>
+                <input type="text" id="server-id" name="server-id" required>
+            </div>
+            <div class="form-group">
+                <label for="diamond-package">Paquete de Diamantes:</label>
+                <select id="diamond-package" name="diamond-package" required>
+                    <option value="" disabled selected>Selecciona un paquete</option>
+                    <option value="56 Diamantes">56 Diamantes - $4.527 COP</option>
+                    <option value="78 Diamantes + 8 de bonificación">78 Diamantes + 8 de bonificación - $5.464 COP</option>
+                    <option value="Pase Semanal">Pase Semanal - $6.996 COP</option>
+                    <option value="156 Diamantes + 16 de bonificación">156 Diamantes + 16 de bonificación - $10.936 COP</option>
+                    <option value="234 Diamantes + 23 de bonificación">234 Diamantes + 23 de bonificación - $16.327 COP</option>
+                    <option value="278 Diamantes">278 Diamantes - $22.634 COP</option>
+                    <option value="Twilight Pass">Twilight Pass - $36.073 COP</option>
+                    <option value="571 Diamantes">571 Diamantes - $45.267 COP</option>
+                    <option value="625 Diamantes + 81 de bonificación">625 Diamantes + 81 de bonificación - $43.727 COP</option>
+                    <option value="1167 Diamantes">1167 Diamantes - $90.535 COP</option>
+                    <option value="1783 Diamantes">1783 Diamantes - $135.802 COP</option>
+                    <option value="1860 Diamantes + 335 de bonificación">1860 Diamantes + 335 de bonificación - $131.182 COP</option>
+                    <option value="3099 Diamantes + 589 de bonificación">3099 Diamantes + 589 de bonificación - $218.636 COP</option>
+                    <option value="4649 Diamantes + 883 de bonificación">4649 Diamantes + 883 de bonificación - $327.954 COP</option>
+                    <option value="7740 Diamantes + 1548 de bonificación">7740 Diamantes + 1548 de bonificación - $546.590 COP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="receipt">Comprobante de Pago:</label>
+                <input type="file" id="receipt" name="receipt" accept="image/*" required>
+            </div>
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
